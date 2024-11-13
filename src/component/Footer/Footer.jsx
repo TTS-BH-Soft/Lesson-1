@@ -1,10 +1,13 @@
+import FooterLogo from "../../assets/logo/logo-footer.svg";
+import Vector from "../../assets/vector.svg";
+
 export function Footer() {
   return (
     <footer id="footer">
       <div className="footer__container">
         <div className="footer__logo">
           <div className="footer__logo--image">
-            <img src="./assets/logo/logo-footer.svg" alt="Beautice Logo" />
+            <img src={FooterLogo} alt="Beautice Logo" />
           </div>
 
           <div className="footer__logo--content">
@@ -27,34 +30,34 @@ export function Footer() {
 
             <ul className="footer__link-list">
               <li className="footer__link-item">
-                <img src="./assets/vector.svg" alt="Home Vector" />
+                <img src={Vector} alt="Home Vector" />
                 <a href="#" className="footer__link">
                   Home
                 </a>
               </li>
 
               <li className="footer__link-item">
-                <img src="./assets/vector.svg" alt="About Vector" />
+                <img src={Vector} alt="About Vector" />
                 <a href="#" className="footer__link">
                   About
                 </a>
               </li>
               <li className="footer__link-item">
-                <img src="./assets/vector.svg" alt="Services Vector" />
+                <img src={Vector} alt="Services Vector" />
                 <a href="#" className="footer__link">
                   Services
                 </a>
               </li>
 
               <li className="footer__link-item">
-                <img src="./assets/vector.svg" alt="Gallery Vector" />
+                <img src={Vector} alt="Gallery Vector" />
                 <a href="#" className="footer__link">
                   Gallery
                 </a>
               </li>
 
               <li className="footer__link-item">
-                <img src="./assets/vector.svg" alt="Team Vector" />
+                <img src={Vector} alt="Team Vector" />
                 <a href="#" className="footer__link">
                   Team
                 </a>
@@ -66,28 +69,28 @@ export function Footer() {
             <h3 className="footer__link-title">Informations</h3>
             <ul className="footer__link-list">
               <li className="footer__link-item">
-                <img src="./assets/vector.svg" alt="Terms Vector" />
+                <img src={Vector} alt="Terms Vector" />
                 <a href="#" className="footer__link">
                   Terms & conditions
                 </a>
               </li>
 
               <li className="footer__link-item">
-                <img src="./assets/vector.svg" alt="Privacy Vector" />
+                <img src={Vector} alt="Privacy Vector" />
                 <a href="#" className="footer__link">
                   Privacy policy
                 </a>
               </li>
 
               <li className="footer__link-item">
-                <img src="./assets/vector.svg" alt="Blog Vector" />
+                <img src={Vector} alt="Blog Vector" />
                 <a href="#" className="footer__link">
                   Blog
                 </a>
               </li>
 
               <li className="footer__link-item">
-                <img src="./assets/vector.svg" alt="Contact Vector" />
+                <img src={Vector} alt="Contact Vector" />
                 <a href="#" className="footer__link">
                   Contact
                 </a>
