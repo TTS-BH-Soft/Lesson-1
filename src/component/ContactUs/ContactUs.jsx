@@ -149,7 +149,9 @@ export function ContactUs() {
               rows="4"
               required
             ></Textarea>
-            <Button type="submit">Send Message</Button>
+            <Button type="submit" className="btn">
+              Send Message
+            </Button>
           </Form>
         </Content>
       </Wrapper>

@@ -91,7 +91,9 @@ const AboutUs = () => (
         </p>
       </Content>
       <ButtonContainer>
-        <button type="button">Learn More</button>
+        <button type="button" className="btn">
+          Learn More
+        </button>
         <a href="#">
           <img src={PlayBtn} alt="Watch Video" />
           <span>Watch Video</span>

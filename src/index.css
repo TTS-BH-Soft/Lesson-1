@@ -85,3 +85,25 @@ h5 {
   width: 100%;
   max-width: 1200px;
 }
+
+#main-container {
+  background: url("../assets/background/bg-header.svg") no-repeat;
+  background-size: 88%;
+
+  height: 805px;
+
+  padding: 41px 0;
+
+  margin-bottom: 30px;
+}
+
+.team__item--center {
+  justify-content: center;
+
+  max-width: 424px;
+  height: 626px;
+  gap: 36px;
+  border-radius: 42px;
+
+  box-shadow: 0 25px 50px 25px #f6f7ff;
+}

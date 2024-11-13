@@ -136,7 +136,7 @@ export function Team() {
           </TeamSocial>
         </TeamItem>
 
-        <TeamItem center>
+        <TeamItem center className="team__item--center">
           <TeamImage>
             <img src={Team2} alt="Team 2" />
           </TeamImage>

@@ -92,8 +92,11 @@ export function Navbar() {
           <ChildLink href="#">Gallery</ChildLink>
           <RootLink href="#">Blog</RootLink>
         </NavBoxLink>
+
         <NavBox>
-          <Button type="button">Contact</Button>
+          <Button type="button" className="btn">
+            Contact
+          </Button>
         </NavBox>
       </Nav>
     </NavbarContainer>

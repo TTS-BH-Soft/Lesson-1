@@ -1,5 +1,10 @@
 import FooterLogo from "../../assets/logo/logo-footer.svg";
 import Vector from "../../assets/vector.svg";
+import Facbook from "../../assets/footer-icon/fb.svg";
+import X from "../../assets/footer-icon/x.svg";
+import LinkedIn from "../../assets/footer-icon/li.svg";
+import Youtube from "../../assets/footer-icon/youtube.svg";
+import Instagram from "../../assets/footer-icon/ig.svg";
 
 export function Footer() {
   return (
@@ -103,19 +108,19 @@ export function Footer() {
       <div className="footer__bottom">
         <div className="footer__social">
           <a href="https://www.facebook.com/" className="footer__social-link">
-            <img src="./assets/footer-icon/fb.svg" alt="Facebook Icon" />
+            <img src={Facbook} alt="Facebook Icon" />
           </a>
           <a href="https://x.com/" className="footer__social-link">
-            <img src="./assets/footer-icon/x.svg" alt="X Icon" />
+            <img src={X} alt="X Icon" />
           </a>
           <a href="https://www.linkedin.com/" className="footer__social-link">
-            <img src="./assets/footer-icon/li.svg" alt="LinkedIn Icon" />
+            <img src={LinkedIn} alt="LinkedIn Icon" />
           </a>
           <a href="https://www.youtube.com/" className="footer__social-link">
-            <img src="./assets/footer-icon/youtube.svg" alt="Youtube Icon" />
+            <img src={Youtube} alt="Youtube Icon" />
           </a>
           <a href="https://www.instagram.com/" className="footer__social-link">
-            <img src="./assets/footer-icon/ig.svg" alt="Instagram Icon" />
+            <img src={Instagram} alt="Instagram Icon" />
           </a>
         </div>
 
@@ -128,7 +133,7 @@ export function Footer() {
 
       <button
         className="footer__back-to-top"
-        onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+        onClick="window.scrollTo({top: 0, behavior: 'smooth'})"
       >
         <i className="fa fa-arrow-up"></i>
       </button>
