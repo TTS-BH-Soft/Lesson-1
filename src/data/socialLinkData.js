@@ -1,4 +1,3 @@
-// src/data/socialLinksData.js
 import FacebookIcon from "../assets/footer-icon/fb.svg";
 import XIcon from "../assets/footer-icon/x.svg";
 import LinkedInIcon from "../assets/footer-icon/li.svg";
