@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Service1 from "../../assets/services/service-1.svg";
 import Service2 from "../../assets/services/service-2.svg";
 import Service3 from "../../assets/services/service-3.svg";
+import ServiceItem from "../ServiceItem/ServiceItem";
 
 const Section = styled.section`
   display: flex;
@@ -53,40 +54,6 @@ const ServicesBox = styled.div`
   }
 `;
 
-const ServiceItem = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  max-width: 343px;
-  min-height: 458px;
-  padding: 2.5rem 1.3rem 2.8rem;
-  border-radius: 42px;
-  box-shadow: 0 25px 50px 25px #f6f7ff;
-  z-index: 4;
-
-  img {
-    width: 166px;
-    height: 166px;
-    margin: 2rem 0 3rem;
-  }
-`;
-
-const ServiceContent = styled.div`
-  margin-top: 50px;
-  padding: 0 1rem;
-
-  h4 {
-    margin: 0.5rem 0;
-  }
-
-  p {
-    margin: 1.2rem 0;
-    font-size: 14px;
-    line-height: 21px;
-  }
-`;
-
 const Services = () => (
   <Section id="services">
     <Header>
@@ -103,38 +70,32 @@ const Services = () => (
     </Header>
 
     <ServicesBox>
-      <ServiceItem>
-        <img src={Service1} alt="Service 1" />
-        <ServiceContent>
-          <h4>Beauty consultation</h4>
-          <p>
-            Non parturient amet, feugiat tellus sagittis, scelerisque eget nulla
-            turpis.
-          </p>
-        </ServiceContent>
-      </ServiceItem>
+      <ServiceItem
+        image={Service1}
+        alt={"Service 1"}
+        title={"Beauty consultation"}
+        description={
+          "Non parturient amet, feugiat tellus sagittis, scelerisque eget nulla turpis."
+        }
+      />
 
-      <ServiceItem>
-        <img src={Service2} alt="Service 2" />
-        <ServiceContent>
-          <h4>Skin treatments</h4>
-          <p>
-            Non parturient amet, feugiat tellus sagittis, scelerisque eget nulla
-            turpis.
-          </p>
-        </ServiceContent>
-      </ServiceItem>
+      <ServiceItem
+        image={Service2}
+        alt={"Service 2"}
+        title={"Skin treatments"}
+        description={
+          "Non parturient amet, feugiat tellus sagittis, scelerisque eget nulla turpis."
+        }
+      />
 
-      <ServiceItem>
-        <img src={Service3} alt="Service 3" />
-        <ServiceContent>
-          <h4>Beauty product</h4>
-          <p>
-            Non parturient amet, feugiat tellus sagittis, scelerisque eget nulla
-            turpis.
-          </p>
-        </ServiceContent>
-      </ServiceItem>
+      <ServiceItem
+        image={Service3}
+        alt={"Service 3"}
+        title={"Beauty product"}
+        description={
+          "Non parturient amet, feugiat tellus sagittis, scelerisque eget nulla turpis."
+        }
+      />
     </ServicesBox>
   </Section>
 );

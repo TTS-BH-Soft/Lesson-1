@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import NavImage from "../../assets/logo/main-logo.png";
+import PlusIcon from "../../assets/plus-icon.svg";
 
 const NavbarContainer = styled.div`
   display: flex;
@@ -22,6 +23,8 @@ const Nav = styled.div`
 const NavBoxLink = styled.div`
   width: 481px;
   padding-right: 34px;
+  display: flex;
+  justify-content: flex-end;
 `;
 
 const NavBox = styled.div`
@@ -86,6 +89,7 @@ export function Navbar() {
         <NavBoxLink>
           <NavLink href="#" className="active">
             Home
+            <img src={PlusIcon} alt="Plus Icon" class="navbar__icon"></img>
           </NavLink>
           <ChildLink href="#">About</ChildLink>
           <ChildLink href="#">Service</ChildLink>

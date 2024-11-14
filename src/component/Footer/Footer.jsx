@@ -1,142 +1,69 @@
-import FooterLogo from "../../assets/logo/logo-footer.svg";
-import Vector from "../../assets/vector.svg";
-import Facbook from "../../assets/footer-icon/fb.svg";
-import X from "../../assets/footer-icon/x.svg";
-import LinkedIn from "../../assets/footer-icon/li.svg";
-import Youtube from "../../assets/footer-icon/youtube.svg";
-import Instagram from "../../assets/footer-icon/ig.svg";
+import FooterLinkItem from "../FooterLinkItem/FooterLinkItem";
+import FooterLinkSection from "../FooterLinkSection/FooterLinkSection";
+
+import socialLinksData from "../../data/socialLinkData";
+import SocialLink from "../SocialLink/SocialLink";
+
+import ArrowBtn from "../../assets/arrow-up.svg";
+
+import {
+  FooterLinks,
+  FooterBottom,
+  FooterSocial,
+  FooterCopyright,
+  CopyrightText,
+  FooterContent,
+  BackToTopButton,
+} from "./FooterStyles.js";
+import FooterLogoComponent from "../FooterLogo/FooterLogo.jsx";
 
 export function Footer() {
   return (
     <footer id="footer">
-      <div className="footer__container">
-        <div className="footer__logo">
-          <div className="footer__logo--image">
-            <img src={FooterLogo} alt="Beautice Logo" />
-          </div>
+      <FooterContent>
+        <FooterLogoComponent />
+        <FooterLinks>
+          <FooterLinkSection title={"Pages"}>
+            <FooterLinkItem alt={"Home Vector"} link={"Home"} />
+            <FooterLinkItem alt={"About Vector"} link={"About"} />
+            <FooterLinkItem alt={"Services Vector"} link={"Services"} />
+            <FooterLinkItem alt={"Gallery Vector"} link={"Gallery"} />
+            <FooterLinkItem alt={"Team Vector"} link={"Team"} />
+          </FooterLinkSection>
 
-          <div className="footer__logo--content">
-            <p className="footer__description">
-              <b>Beautice</b> is a Beauty Clinic WordPress Theme.
-            </p>
-            <address className="footer__address">
-              Baker Steet 101, NY, United States.
-              <div className="footer__address--box">
-                <p>+521 569 8966.</p>
-                <a href="mailto:mail@company.com">mail@company.com</a>.
-              </div>
-            </address>
-          </div>
-        </div>
+          <FooterLinkSection title={"Informations"}>
+            <FooterLinkItem alt={"Tearms Vector"} link={"Terms & conditions"} />
+            <FooterLinkItem alt={"About Vector"} link={"Privacy policy"} />
+            <FooterLinkItem alt={"Privacy Vector"} link={"Services"} />
+            <FooterLinkItem alt={"Contact Vector"} link={"Contact"} />
+          </FooterLinkSection>
+        </FooterLinks>
+      </FooterContent>
 
-        <div className="footer__links">
-          <div className="footer__link-section">
-            <h3 className="footer__link-title">Pages</h3>
+      <FooterBottom>
+        <FooterSocial>
+          {socialLinksData.map((link, index) => (
+            <SocialLink
+              key={index}
+              href={link.href}
+              src={link.src}
+              alt={link.alt}
+            />
+          ))}
+        </FooterSocial>
 
-            <ul className="footer__link-list">
-              <li className="footer__link-item">
-                <img src={Vector} alt="Home Vector" />
-                <a href="#" className="footer__link">
-                  Home
-                </a>
-              </li>
-
-              <li className="footer__link-item">
-                <img src={Vector} alt="About Vector" />
-                <a href="#" className="footer__link">
-                  About
-                </a>
-              </li>
-              <li className="footer__link-item">
-                <img src={Vector} alt="Services Vector" />
-                <a href="#" className="footer__link">
-                  Services
-                </a>
-              </li>
-
-              <li className="footer__link-item">
-                <img src={Vector} alt="Gallery Vector" />
-                <a href="#" className="footer__link">
-                  Gallery
-                </a>
-              </li>
-
-              <li className="footer__link-item">
-                <img src={Vector} alt="Team Vector" />
-                <a href="#" className="footer__link">
-                  Team
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div className="footer__link-section">
-            <h3 className="footer__link-title">Informations</h3>
-            <ul className="footer__link-list">
-              <li className="footer__link-item">
-                <img src={Vector} alt="Terms Vector" />
-                <a href="#" className="footer__link">
-                  Terms & conditions
-                </a>
-              </li>
-
-              <li className="footer__link-item">
-                <img src={Vector} alt="Privacy Vector" />
-                <a href="#" className="footer__link">
-                  Privacy policy
-                </a>
-              </li>
-
-              <li className="footer__link-item">
-                <img src={Vector} alt="Blog Vector" />
-                <a href="#" className="footer__link">
-                  Blog
-                </a>
-              </li>
-
-              <li className="footer__link-item">
-                <img src={Vector} alt="Contact Vector" />
-                <a href="#" className="footer__link">
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div className="footer__bottom">
-        <div className="footer__social">
-          <a href="https://www.facebook.com/" className="footer__social-link">
-            <img src={Facbook} alt="Facebook Icon" />
-          </a>
-          <a href="https://x.com/" className="footer__social-link">
-            <img src={X} alt="X Icon" />
-          </a>
-          <a href="https://www.linkedin.com/" className="footer__social-link">
-            <img src={LinkedIn} alt="LinkedIn Icon" />
-          </a>
-          <a href="https://www.youtube.com/" className="footer__social-link">
-            <img src={Youtube} alt="Youtube Icon" />
-          </a>
-          <a href="https://www.instagram.com/" className="footer__social-link">
-            <img src={Instagram} alt="Instagram Icon" />
-          </a>
-        </div>
-
-        <div className="footer__copyright">
-          <p className="flex-center">
+        <FooterCopyright>
+          <CopyrightText>
             © AltDesain Studio 2021 - All right reserved.
-          </p>
-        </div>
-      </div>
+          </CopyrightText>
+        </FooterCopyright>
+      </FooterBottom>
 
-      <button
-        className="footer__back-to-top"
-        onClick="window.scrollTo({top: 0, behavior: 'smooth'})"
+      <BackToTopButton
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       >
-        <i className="fa fa-arrow-up"></i>
-      </button>
+        <img src={ArrowBtn} alt="Arrow Button" />
+      </BackToTopButton>
     </footer>
   );
 }

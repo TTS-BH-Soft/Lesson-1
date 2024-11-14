@@ -87,7 +87,7 @@ h5 {
 }
 
 #main-container {
-  background: url("../assets/background/bg-header.svg") no-repeat;
+  background: url("./assets/background/bg-header.svg") no-repeat;
   background-size: 88%;
 
   height: 805px;
@@ -95,6 +95,20 @@ h5 {
   padding: 41px 0;
 
   margin-bottom: 30px;
+}
+
+#footer {
+  background: url("./assets/background/bg-footer.svg"),
+    url("./assets/background/bg-bottom-footer.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, bottom left;
+  background-size: cover, contain;
+
+  color: #d7dbff;
+  padding: 50px 20px;
+  width: 100%;
+  height: 705px;
+  position: relative;
 }
 
 .team__item--center {
@@ -106,4 +120,11 @@ h5 {
   border-radius: 42px;
 
   box-shadow: 0 25px 50px 25px #f6f7ff;
+}
+
+.navbar__icon {
+  width: 7px;
+  height: 7px;
+
+  margin: 0 4px;
 }
