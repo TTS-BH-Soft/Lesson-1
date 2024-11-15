@@ -7,6 +7,7 @@ import {
   TeamItem,
   TeamImage,
   TeamContent,
+  TeamSocial,
 } from "./TeamStyled";
 import teamMembers from "../../data/teamMembers";
 import SocialIcon from "../SocialIcon/SocialIcon";
@@ -15,7 +16,7 @@ export function Teams() {
   return (
     <TeamSection id="team">
       <SectionTitle>Professional Teams</SectionTitle>
-      <MainTitle>The Professional Expert</MainTitle>
+      <MainTitle>The Professional expert</MainTitle>
       <Description>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam.
       </Description>
@@ -31,7 +32,9 @@ export function Teams() {
               <h4>{member.name}</h4>
               <p>{member.description}</p>
             </TeamContent>
-            <SocialIcon />
+            <TeamSocial>
+              <SocialIcon />
+            </TeamSocial>
           </TeamItem>
         ))}
       </TeamBox>
