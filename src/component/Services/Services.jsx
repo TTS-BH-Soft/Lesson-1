@@ -24,20 +24,21 @@ const Header = styled.div`
   text-align: center;
 
   h5 {
-    font-size: 1rem;
-    color: #ff4da6;
+    font-size: 16.2px;
+    line-height: 23px;
   }
 
   h2 {
-    margin-top: 9px;
+    margin-top: 10px;
     font-weight: 600;
     width: 732px;
     height: 97px;
   }
 
   p {
-    margin-top: 13px;
-    font-weight: normal;
+    margin-top: 12.5px;
+    margin-left: 1px;
+    font-weight: 400;
   }
 `;
 
@@ -45,7 +46,7 @@ const ServicesBox = styled.div`
   display: flex;
   justify-content: center;
   gap: 3.5rem;
-  margin-top: 70px;
+  padding-top: 80px;
   background-color: #fff;
 
   @media (max-width: 900px) {

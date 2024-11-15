@@ -11,7 +11,7 @@ import {
 import teamMembers from "../../data/teamMembers";
 import SocialIcon from "../SocialIcon/SocialIcon";
 
-export default function Teams() {
+export function Teams() {
   return (
     <TeamSection id="team">
       <SectionTitle>Professional Teams</SectionTitle>

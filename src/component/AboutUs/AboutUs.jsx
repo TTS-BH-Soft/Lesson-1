@@ -6,7 +6,7 @@ const Section = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 70px;
+  margin: 67px 70px;
 `;
 
 const InfoBox = styled.div`
@@ -17,7 +17,9 @@ const Header = styled.div`
   margin-bottom: 0.5rem;
 
   h5 {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.8rem;
+    line-height: 20px;
+    font-weight: 600;
   }
 
   h2 {
@@ -67,7 +69,7 @@ const ImageContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 2.4rem;
+  padding-top: 2.6rem;
   max-width: 476px;
 `;
 

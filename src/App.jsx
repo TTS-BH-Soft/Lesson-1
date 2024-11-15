@@ -1,3 +1,5 @@
+import "./App.css";
+
 import { Navbar } from "./component/NavBar/NavBar";
 import { Slider } from "./component/Slider/Slider";
 import { MainContent } from "./component/MainContent/MainContent";

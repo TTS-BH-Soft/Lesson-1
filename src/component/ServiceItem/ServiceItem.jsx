@@ -7,7 +7,7 @@ const StyleItem = styled.div`
   text-align: center;
   max-width: 343px;
   min-height: 458px;
-  padding: 2.5rem 1.3rem 2.8rem;
+  padding: 2.6rem 0.9rem;
   border-radius: 42px;
   box-shadow: 0 25px 50px 25px #f6f7ff;
   z-index: 4;
@@ -15,7 +15,7 @@ const StyleItem = styled.div`
   img {
     width: 166px;
     height: 166px;
-    margin: 2rem 0 3rem;
+    margin: 1.4rem 0 2.9rem;
   }
 `;
 
@@ -24,6 +24,7 @@ const ServiceContent = styled.div`
 
   h4 {
     margin: 0.5rem 0;
+    letter-spacing: 0.13px;
   }
 
   p {

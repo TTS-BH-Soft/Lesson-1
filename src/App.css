@@ -1,0 +1,10 @@
+#main-container {
+  background: url("./assets/background/bg-header.svg") no-repeat;
+  background-size: 88%;
+
+  height: 805px;
+
+  padding: 41px 0;
+
+  margin-bottom: 30px;
+}
