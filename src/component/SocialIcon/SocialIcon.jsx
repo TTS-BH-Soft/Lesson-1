@@ -4,7 +4,7 @@ import {
   faFacebookF,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
-import { TeamSocial } from "../Team/Team";
+import { TeamSocial } from "../Teams/TeamStyled";
 
 const SocialIcons = () => (
   <TeamSocial>

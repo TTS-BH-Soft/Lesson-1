@@ -7,11 +7,11 @@ import {
   TeamItem,
   TeamImage,
   TeamContent,
-} from "./Team";
+} from "./TeamStyled";
 import teamMembers from "../../data/teamMembers";
 import SocialIcon from "../SocialIcon/SocialIcon";
 
-export function Team() {
+export default function Teams() {
   return (
     <TeamSection id="team">
       <SectionTitle>Professional Teams</SectionTitle>

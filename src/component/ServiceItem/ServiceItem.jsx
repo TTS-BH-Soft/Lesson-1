@@ -30,6 +30,7 @@ const ServiceContent = styled.div`
     margin: 1.2rem 0;
     font-size: 14px;
     line-height: 21px;
+    letter-spacing: 1.5px;
   }
 `;
 

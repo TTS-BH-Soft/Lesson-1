@@ -87,7 +87,7 @@ h5 {
 }
 
 #main-container {
-  background: url("./assets/background/bg-header.svg") no-repeat;
+  background: url("../assets/background/bg-header.svg") no-repeat;
   background-size: 88%;
 
   height: 805px;
