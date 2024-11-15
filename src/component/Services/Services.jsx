@@ -45,7 +45,7 @@ const Header = styled.div`
 const ServicesBox = styled.div`
   display: flex;
   justify-content: center;
-  gap: 3.5rem;
+  gap: 3.47rem;
   padding-top: 80px;
   background-color: #fff;
 
