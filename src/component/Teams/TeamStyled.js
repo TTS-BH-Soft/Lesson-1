@@ -5,7 +5,7 @@ export const TeamSection = styled.section`
   justify-content: center;
   align-items: space-between;
   flex-direction: column;
-  margin-bottom: -100px;
+  margin-bottom: -160px;
 
   text-align: center;
 `;

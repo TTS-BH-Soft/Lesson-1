@@ -12,7 +12,7 @@ import {
   Input,
   Textarea,
   Button,
-} from "./ContactUs";
+} from "./ContactStyled";
 
 export function ContactUs() {
   return (

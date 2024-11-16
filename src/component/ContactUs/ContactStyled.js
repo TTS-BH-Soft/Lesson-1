@@ -12,7 +12,7 @@ export const ContactSection = styled.section`
 `;
 
 export const Wrapper = styled.div`
-  padding-top: 106px;
+  padding-top: 175px;
   display: flex;
   align-items: flex-start;
   width: 100%;
@@ -39,7 +39,7 @@ export const Title = styled.h5`
 
 export const Heading = styled.h2`
   font-size: 2.2rem;
-  margin: 0.7rem 0;
+  margin: 0.6rem 0;
   line-height: 45px;
   max-width: 404px;
   font-weight: 550;
