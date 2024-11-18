@@ -4,10 +4,20 @@ export const NavbarContainer = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
+
+  @media (max-width: 768px) {
+    // justify-content: space-betwee;
+  }
 `;
 
 export const Logo = styled.img`
   margin-left: 0.7rem;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    margin: 50px 20px;
+    text-algin: center;
+  }
 `;
 
 export const Nav = styled.div`
@@ -16,6 +26,22 @@ export const Nav = styled.div`
   align-items: center;
   margin-top: 4px;
   margin-right: 10px;
+
+  @media (max-width: 768px) {
+    display: none;
+
+    &.active {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background: #fff;
+      width: 100%;
+      padding: 1rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  }
 `;
 
 export const NavBoxLink = styled.div`
@@ -76,5 +102,47 @@ export const Button = styled.button`
 
   &:hover {
     background-color: #e07eb3;
+  }
+`;
+
+export const HamburgerMenu = styled.div`
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+
+  div {
+    width: 25px;
+    height: 3px;
+    background-color: #41487f;
+    transition: all 0.3s ease;
+  }
+
+  @media (max-width: 768px) {
+    display: flex;
+  }
+`;
+
+export const MobileMenu = styled.div`
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 1rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  a {
+    margin: 0.5rem 0;
+    text-decoration: none;
+    color: #41487f;
+    font-size: 1.2rem;
+  }
+
+  @media (max-width: 768px) {
+    display: flex;
   }
 `;

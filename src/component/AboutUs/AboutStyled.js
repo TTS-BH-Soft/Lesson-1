@@ -5,10 +5,33 @@ export const Section = styled.section`
   justify-content: center;
   align-items: center;
   margin: 67px 70px;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    margin: 50px 20px;
+    text-algin: center;
+  }
+
+  @media (max-width: 768px) {
+    margin: 30px 10px;
+  }
 `;
 
 export const InfoBox = styled.div`
   width: 664px;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 `;
 
 export const Header = styled.div`
@@ -21,11 +44,19 @@ export const Header = styled.div`
 
     line-height: 20px;
     font-weight: 600;
+
+    @media (max-width: 768px) {
+      font-size: 0.9rem;
+    }
   }
 
   h2 {
     margin-bottom: 1.2rem;
     font-weight: 600;
+
+    @media (max-width: 768px) {
+      font-size: 1.5rem;
+    }
   }
 `;
 
@@ -37,6 +68,16 @@ export const Content = styled.div`
     line-height: 24px;
     margin-bottom: 1.5rem;
     letter-spacing: 1.695px;
+
+    @media (max-width: 768px) {
+      font-size: 0.9rem;
+      line-height: 22px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    text-align: center;
   }
 `;
 
@@ -67,6 +108,33 @@ export const ButtonContainer = styled.div`
     color: #8b8b8b;
     letter-spacing: 1.8px;
   }
+
+  @media (max-width: 1024px) {
+    margin-top: 1rem;
+
+    span {
+      width: 130px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+
+    button {
+      margin-bottom: 20px;
+    }
+
+    a {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    span {
+      width: 130px;
+    }
+  }
 `;
 
 export const ImageContainer = styled.div`
@@ -75,4 +143,14 @@ export const ImageContainer = styled.div`
   align-items: center;
   padding-top: 2.6rem;
   max-width: 476px;
+
+  @media (max-width: 1024px) {
+    max-width: 100%; /* Chiếm toàn bộ chiều ngang */
+    padding-top: 0;
+
+    img {
+      width: 100%; /* Ảnh sẽ tự co giãn theo kích thước container */
+      height: auto;
+    }
+  }
 `;

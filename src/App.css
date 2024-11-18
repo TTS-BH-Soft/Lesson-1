@@ -5,6 +5,9 @@
   height: 805px;
 
   padding: 41px 0;
-
   margin-bottom: 30px;
+
+  @media screen and (max-width: 768px) {
+    background: none;
+  }
 }
