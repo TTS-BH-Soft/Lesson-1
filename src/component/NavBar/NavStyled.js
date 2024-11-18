@@ -41,7 +41,7 @@ export const NavLink = styled.a`
 
   &.active {
     font-weight: 600;
-    color: #414880;
+    color: #41487f;
     width: 66px;
     margin-top: 2px;
     display: flex;
@@ -50,7 +50,7 @@ export const NavLink = styled.a`
   }
 
   &:hover {
-    color: #414880;
+    color: #41487f;
   }
 `;
 

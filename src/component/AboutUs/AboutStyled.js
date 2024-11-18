@@ -16,6 +16,9 @@ export const Header = styled.div`
 
   h5 {
     margin-bottom: 0.8rem;
+    margin-left: 0.08rem;
+    margin-top: 0.1rem;
+
     line-height: 20px;
     font-weight: 600;
   }

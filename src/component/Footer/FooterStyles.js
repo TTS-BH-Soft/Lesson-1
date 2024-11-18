@@ -47,16 +47,24 @@ export const CopyrightText = styled.p`
 export const BackToTopButton = styled.button`
   width: 36px;
   height: 36px;
+
   position: absolute;
   bottom: 169px;
   right: 65px;
+
   background-color: #ff64ae;
   color: #ffffff;
+
   border: none;
   border-radius: 5px;
+
   cursor: pointer;
   font-size: 1.2rem;
   transition: background-color 0.3s;
+
+  img {
+    padding-top: 6px;
+  }
 
   &:hover {
     background-color: #d85076;

@@ -12,7 +12,7 @@ const teamMembers = [
   },
   {
     role: "Dermatologist",
-    name: "Bella Sebastian",
+    name: "Bella sebastian",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit",
     image: Team2,

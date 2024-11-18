@@ -24,7 +24,8 @@ export const Address = styled.address`
   color: #d7dbff;
   font-size: 14px;
   line-height: 23px;
-  margin-top: 1.44rem;
+  margin-top: 1.4rem;
+  margin-left: 1px;
   letter-spacing: 1.6px;
 `;
 
@@ -46,6 +47,5 @@ export const AddressBox = styled.div`
     font-size: 14px;
     margin-left: 2.6rem;
     letter-spacing: 1.6px;
-    text-decoration: none;
   }
 `;

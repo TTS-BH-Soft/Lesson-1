@@ -6,8 +6,6 @@ export const ContactSection = styled.section`
   background: url(${BgContact}) no-repeat;
   background-size: 82%;
 
-  //   padding-top: 0.2rem;
-  //   margin-top: 1.9rem;
   margin-bottom: 0.4rem;
 `;
 
@@ -19,8 +17,7 @@ export const Wrapper = styled.div`
 `;
 
 export const ImageContainer = styled.div`
-  margin: 7.3rem;
-  margin-right: 6.4rem;
+  margin: 7.2rem 6.3rem 7.3rem 7.4rem;
 
   img {
     width: 520px;
@@ -65,15 +62,17 @@ export const FormGroup = styled.div`
 `;
 
 export const Input = styled.input`
-  width: 100%;
   height: 61.58px;
   font-size: 1rem;
   font-weight: 300;
   border: 1px solid #d9ddfe;
+
   border-radius: 15px;
   padding-left: 1.4rem;
-  margin-bottom: 0.35rem;
+  padding-bottom: 2px;
+  margin-bottom: 0.37rem;
   line-height: 24px;
+  width: 520px;
 
   &:focus {
     border-color: #ff4da6;

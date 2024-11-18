@@ -34,7 +34,7 @@ export function Footer() {
           <FooterLinkSection title={"Informations"}>
             <FooterLinkItem alt={"Tearms Vector"} link={"Terms & conditions"} />
             <FooterLinkItem alt={"About Vector"} link={"Privacy policy"} />
-            <FooterLinkItem alt={"Privacy Vector"} link={"Services"} />
+            <FooterLinkItem alt={"Privacy Vector"} link={"Blog"} />
             <FooterLinkItem alt={"Contact Vector"} link={"Contact"} />
           </FooterLinkSection>
         </FooterLinks>

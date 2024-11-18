@@ -65,7 +65,7 @@ export const TeamContent = styled.div`
   margin: 0.5rem 0;
 
   h5 {
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.7rem;
   }
 
   h4 {
@@ -75,7 +75,7 @@ export const TeamContent = styled.div`
   p {
     line-height: 21px;
     font-size: 14px;
-    margin: 0.1rem 0 0.4rem 0;
+    margin: 0.4rem 0;
   }
 `;
 
@@ -88,7 +88,7 @@ export const TeamSocial = styled.div`
     height: 49px;
     border-radius: 50%;
     padding: 24px;
-    margin: 0 15px;
+    margin: 0 17px;
     background-color: #fff;
     color: #192343;
     box-shadow: -2px 6px 16px -1px #e6e9fd;
