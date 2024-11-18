@@ -48,7 +48,7 @@ export const TeamItem = styled.div`
   height: ${(props) => (props.center ? "626px" : "439px")};
   box-shadow: ${(props) =>
     props.center ? "0 25px 50px 25px #f6f7ff" : "none"};
-  gap: ${(props) => (props.center ? "36px" : "0")};
+  gap: ${(props) => (props.center ? "40px" : "0")};
   border-radius: ${(props) => (props.center ? "42px" : "0")};
 `;
 
@@ -65,17 +65,22 @@ export const TeamContent = styled.div`
   margin: 0.5rem 0;
 
   h5 {
-    margin-bottom: 0.7rem;
+    line-height: 20px;
   }
 
   h4 {
-    margin-bottom: 1rem;
+    margin: 0.9rem 0;
+    margin-bottom: 1.3rem;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22.5px;
   }
 
   p {
+    margin-left: 0.1rem;
     line-height: 21px;
     font-size: 14px;
-    margin: 0.4rem 0;
+    font-weight: 400;
   }
 `;
 

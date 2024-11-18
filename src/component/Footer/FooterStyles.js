@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const FooterContent = styled.div`
   display: flex;
-  margin-top: 95px;
+  margin-top: 96px;
   margin-left: 50px;
 `;
 
@@ -20,7 +20,7 @@ export const FooterBottom = styled.div`
   align-items: flex-end;
   font-size: 1rem;
   color: #d7dbff;
-  margin: 3rem 8.1rem;
+  margin: 2.9rem 8.05rem;
 `;
 
 export const FooterSocial = styled.div`

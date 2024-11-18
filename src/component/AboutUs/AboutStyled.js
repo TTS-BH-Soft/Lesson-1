@@ -49,11 +49,14 @@ export const ButtonContainer = styled.div`
     max-width: 200px;
     height: 58.36px;
     letter-spacing: 1.76px;
+    margin-left: 1px;
   }
 
   a {
     text-decoration: none;
-    margin: 0 2.8rem;
+    margin-left: 2.7rem;
+    margin-right: 2.8rem;
+
     display: flex;
     align-items: center;
     justify-content: flex-start;
