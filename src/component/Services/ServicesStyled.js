@@ -17,7 +17,7 @@ export const Section = styled.section`
 
   @media (max-width: 768px) {
     background-position: center;
-    padding: 60px 20px;
+    // padding: 60px 20px;
   }
 `;
 
@@ -52,6 +52,10 @@ export const Header = styled.div`
     p {
       width: 600px;
     }
+  }
+
+  @media (max-width: 769px) {
+    margin-top: 0;
   }
 `;
 

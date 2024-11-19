@@ -32,7 +32,7 @@ export const FooterLinks = styled.div`
   margin: 5rem 8rem;
   max-width: 514px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     align-items: flex-start;
     margin: 2rem 0;
     gap: 7rem;
@@ -61,7 +61,6 @@ export const FooterBottom = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
-    // margin: 2rem 0;
     gap: 1.5rem;
   }
 
@@ -78,7 +77,7 @@ export const FooterSocial = styled.div`
   align-items: center;
   max-height: 28px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     justify-content: center;
     gap: 1.5rem;
     max-width: none;
@@ -101,7 +100,7 @@ export const CopyrightText = styled.p`
   letter-spacing: 1.7px;
   text-align: center;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     margin: 2rem 0;
   }
 `;
