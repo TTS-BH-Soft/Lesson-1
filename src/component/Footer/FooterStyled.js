@@ -54,6 +54,8 @@ export const FooterBottom = styled.div`
 
   @media (max-width: 1024px) {
     margin: 0;
+    flex-direction: column;
+    align-items: center;
   }
 
   @media (max-width: 768px) {

@@ -24,6 +24,11 @@ export const Wrapper = styled.div`
   align-items: flex-start;
   max-width: 1440px;
 
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
@@ -39,7 +44,7 @@ export const ImageContainer = styled.div`
   margin: 7.2rem 6.3rem 7.3rem 7.4rem;
 
   img {
-    width: 520px;
+    max-width: 520px;
     height: 614px;
     margin-top: 2.8rem;
   }

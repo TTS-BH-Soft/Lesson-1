@@ -34,6 +34,14 @@ export const TeamBox = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
+
+  @media (max-width: 768px) {
+    margin: 30px 10px;
+  }
 `;
 
 export const TeamItem = styled.div`
@@ -50,6 +58,19 @@ export const TeamItem = styled.div`
     props.center ? "0 25px 50px 25px #f6f7ff" : "none"};
   gap: ${(props) => (props.center ? "40px" : "0")};
   border-radius: ${(props) => (props.center ? "42px" : "0")};
+
+  &:hover {
+    box-shadow: 0 25px 50px 25px #f6f7ff;
+    height: 626px;
+    gap: 40px;
+    border-radius: 42px;
+    justify-content: center;
+  }
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 `;
 
 export const TeamImage = styled.div`

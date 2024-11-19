@@ -26,6 +26,7 @@ export const SliderContent = styled.div`
   @media (max-width: 1024px) {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 `;
 

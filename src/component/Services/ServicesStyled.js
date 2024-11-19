@@ -56,7 +56,7 @@ export const ServicesBox = styled.div`
   padding-top: 80px;
   background-color: #fff;
 
-  @media (max-width: 900px) {
+  @media (max-width: 1024px) {
     flex-direction: column;
     gap: 1.5rem;
   }
