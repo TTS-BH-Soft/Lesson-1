@@ -118,12 +118,13 @@ export const ButtonContainer = styled.div`
   }
 
   @media (max-width: 768px) {
-    flex-direction: column;
     align-items: center;
-    margin-top: 1rem;
+    justify-content: center;
 
     button {
-      margin-bottom: 20px;
+      font-size: 13px;
+      height: 50px;
+      margin-right: 16px;
     }
 
     a {
@@ -131,8 +132,14 @@ export const ButtonContainer = styled.div`
       margin-right: 0;
     }
 
+    img {
+      width: 35px;
+    }
+
     span {
-      width: 130px;
+      width: 120px;
+      font-size: 13px;
+      margin: 0;
     }
   }
 `;

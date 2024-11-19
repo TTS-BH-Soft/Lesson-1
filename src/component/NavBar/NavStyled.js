@@ -49,6 +49,10 @@ export const NavBoxLink = styled.div`
   padding-right: 34px;
   display: flex;
   justify-content: flex-end;
+
+  @media (max-width: 768px) {
+    // justify-content: space-betwee;
+  }
 `;
 
 export const NavBox = styled.div`

@@ -4,6 +4,15 @@ export const FooterLogoContainer = styled.div`
   flex: 1;
   max-width: 492px;
   margin: 6rem 0 5rem 5rem;
+
+  @media (max-width: 768px) {
+    margin: 3rem 0;
+    text-align: center;
+  }
+
+  @media (max-width: 480px) {
+    margin: 2rem 0;
+  }
 `;
 
 export const LogoContent = styled.div`
