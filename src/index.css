@@ -94,11 +94,16 @@ h5 {
   position: relative;
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   #footer {
     width: auto;
     height: auto;
     padding: 0;
     background-size: cover;
+  }
+
+  .about-us__bg {
+    display: none;
+    position: static;
   }
 }

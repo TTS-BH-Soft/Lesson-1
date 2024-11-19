@@ -57,4 +57,8 @@ export const AddressBox = styled.div`
     margin-left: 2.6rem;
     letter-spacing: 1.6px;
   }
+
+  @media (max-width: 1024px) {
+    justify-content: center;
+  }
 `;

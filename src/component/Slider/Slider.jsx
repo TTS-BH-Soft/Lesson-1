@@ -27,7 +27,8 @@ export function Slider() {
           <img src={SliderImage} alt="Beauty consultation" />
         </ImageContainer>
       </SliderContent>
-      <SliderControls id="dots-container">
+
+      <SliderControls>
         <Dot id="next"></Dot>
         <Dot className="active"></Dot>
         <Dot id="prev"></Dot>

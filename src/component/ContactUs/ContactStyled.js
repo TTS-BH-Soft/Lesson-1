@@ -27,6 +27,7 @@ export const Wrapper = styled.div`
   @media (max-width: 1024px) {
     flex-direction: column;
     align-items: center;
+    padding-top: 100px;
   }
 
   @media (max-width: 768px) {
@@ -47,6 +48,10 @@ export const ImageContainer = styled.div`
     max-width: 520px;
     height: 614px;
     margin-top: 2.8rem;
+  }
+
+  @media (max-width: 1024px) {
+    margin: 0;
   }
 
   @media (max-width: 768px) {
@@ -82,8 +87,9 @@ export const Content = styled.div`
 export const Title = styled.h5`
   margin-bottom: 0.1rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     font-size: 1rem;
+    text-align: center;
   }
 `;
 
@@ -94,6 +100,11 @@ export const Heading = styled.h2`
   max-width: 404px;
   font-weight: 550;
   letter-spacing: 0.4px;
+
+  @media (max-width: 1024px) {
+    margin: 0 auto;
+    text-align: center;
+  }
 
   @media (max-width: 768px) {
     font-size: 1.8rem;
@@ -109,6 +120,10 @@ export const Heading = styled.h2`
 export const Description = styled.p`
   margin: 1.2rem 0;
   letter-spacing: 1.65px;
+
+  @media (max-width: 1024px) {
+    text-align: center;
+  }
 `;
 
 export const Form = styled.form`
@@ -196,7 +211,7 @@ export const Button = styled.button`
   padding: 1.1rem 2rem;
   cursor: pointer;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     width: 100%;
     margin: 0 auto;
   }

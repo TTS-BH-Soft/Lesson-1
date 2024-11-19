@@ -11,6 +11,10 @@ export const Section = styled.section`
   position: relative;
   z-index: 88;
 
+  @media (max-width: 1024px) {
+    padding: 0;
+  }
+
   @media (max-width: 768px) {
     background-position: center;
     padding: 60px 20px;
@@ -43,6 +47,8 @@ export const Header = styled.div`
   }
 
   @media (max-width: 1024px) {
+    margin-top: 4rem;
+
     p {
       width: 600px;
     }
@@ -59,5 +65,6 @@ export const ServicesBox = styled.div`
   @media (max-width: 1024px) {
     flex-direction: column;
     gap: 1.5rem;
+    padding-top: 60px;
   }
 `;

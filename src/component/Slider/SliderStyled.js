@@ -11,6 +11,7 @@ export const SliderContainer = styled.div`
     height: auto;
     padding: 0 16px;
     top: 100px;
+    left: 0;
   }
 
   @media (max-width: 480px) {
@@ -27,8 +28,6 @@ export const SliderContent = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    // position: absolute;
   }
 `;
 
@@ -48,6 +47,9 @@ export const Title = styled.h1`
   @media (max-width: 1024px) {
     font-size: 1.5rem;
     line-height: 1.2;
+
+    margin: 0 auto;
+    height: 60px;
   }
 
   @media (max-width: 480px) {
@@ -83,7 +85,6 @@ export const Button = styled.button`
   cursor: pointer;
 
   @media (max-width: 1024px) {
-    width: 150px;
     font-size: 0.8rem;
     margin-top: 16px;
   }
@@ -95,11 +96,23 @@ export const ImageContainer = styled.div`
   position: relative;
   top: -56px;
 
+  img {
+    max-width: 602px;
+  }
+
+  @media (max-width: 1024px) {
+    top: 0;
+  }
+
   @media (max-width: 768px) {
-    width: 100%;
-    max-width: 400px;
     height: auto;
-    top: 0; /* Loại bỏ khoảng cách trên */
+    top: 0;
+    display: flex;
+    justify-content: center;
+
+    img {
+      height: 300px;
+    }
   }
 
   @media (max-width: 480px) {
@@ -120,6 +133,9 @@ export const SliderControls = styled.div`
   @media (max-width: 1024px) {
     bottom: 10px;
     width: 50px;
+    position: static;
+    margin: 2rem auto;
+    transform: none;
   }
 `;
 

@@ -38,10 +38,6 @@ export const TeamBox = styled.div`
   @media (max-width: 1024px) {
     flex-direction: column;
   }
-
-  @media (max-width: 768px) {
-    margin: 30px 10px;
-  }
 `;
 
 export const TeamItem = styled.div`
@@ -69,7 +65,9 @@ export const TeamItem = styled.div`
 
   @media (max-width: 1024px) {
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 0;
+
+    margin: ${(props) => (props.center ? "0" : "6.2rem 30px")};
   }
 `;
 

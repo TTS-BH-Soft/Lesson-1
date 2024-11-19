@@ -26,6 +26,7 @@ export const StyleItem = styled.div`
   @media (max-width: 768px) {
     padding: 2rem 1rem;
     box-shadow: 0 10px 20px #e0e0e0;
+    min-height: 300px;
   }
 `;
 

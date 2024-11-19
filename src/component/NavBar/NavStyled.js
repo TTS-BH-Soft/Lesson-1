@@ -16,7 +16,7 @@ export const Logo = styled.img`
 
   @media (max-width: 1024px) {
     flex-direction: column;
-    margin: 50px 20px;
+    // margin: 50px 20px;
     text-algin: center;
   }
 `;
