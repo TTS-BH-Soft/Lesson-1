@@ -70,12 +70,6 @@ h5 {
   background-color: #d91c6b;
 }
 
-.flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .about-us__bg {
   position: absolute;
   top: 1311px;
@@ -100,20 +94,11 @@ h5 {
   position: relative;
 }
 
-.team__item--center {
-  justify-content: center;
-
-  max-width: 424px;
-  height: 626px;
-  gap: 36px;
-  border-radius: 42px;
-
-  box-shadow: 0 25px 50px 25px #f6f7ff;
-}
-
-.navbar__icon {
-  width: 7px;
-  height: 7px;
-
-  margin: 0 4px;
+@media (max-width: 1024px) {
+  #footer {
+    width: auto;
+    height: auto;
+    padding: 0;
+    background-size: cover;
+  }
 }

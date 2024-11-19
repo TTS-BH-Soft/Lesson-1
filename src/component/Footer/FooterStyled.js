@@ -5,6 +5,13 @@ export const FooterContent = styled.div`
   margin-top: 96px;
   margin-left: 50px;
 
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    margin-top: 50px;
+  }
+
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
@@ -26,10 +33,9 @@ export const FooterLinks = styled.div`
   max-width: 514px;
 
   @media (max-width: 768px) {
-    flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     margin: 2rem 0;
-    gap: 2rem;
+    gap: 7rem;
   }
 
   @media (max-width: 480px) {
@@ -46,10 +52,14 @@ export const FooterBottom = styled.div`
   color: #d7dbff;
   margin: 2.9rem 8.05rem;
 
+  @media (max-width: 1024px) {
+    margin: 0;
+  }
+
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
-    margin: 2rem 0;
+    // margin: 2rem 0;
     gap: 1.5rem;
   }
 
@@ -88,6 +98,10 @@ export const CopyrightText = styled.p`
   line-height: 28px;
   letter-spacing: 1.7px;
   text-align: center;
+
+  @media (max-width: 768px) {
+    margin: 2rem 0;
+  }
 `;
 
 export const BackToTopButton = styled.button`

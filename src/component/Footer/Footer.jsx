@@ -14,7 +14,7 @@ import {
   CopyrightText,
   FooterContent,
   BackToTopButton,
-} from "./FooterStyles.js";
+} from "./FooterStyled.js";
 import FooterLogoComponent from "../FooterLogo/FooterLogo.jsx";
 
 export function Footer() {

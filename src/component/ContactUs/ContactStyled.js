@@ -22,7 +22,7 @@ export const Wrapper = styled.div`
   padding-top: 175px;
   display: flex;
   align-items: flex-start;
-  width: 100%;
+  max-width: 1440px;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -46,6 +46,7 @@ export const ImageContainer = styled.div`
 
   @media (max-width: 768px) {
     margin: 1rem 0;
+    text-align: center;
     img {
       width: 70%;
       height: auto;
@@ -192,5 +193,6 @@ export const Button = styled.button`
 
   @media (max-width: 768px) {
     width: 100%;
+    margin: 0 auto;
   }
 `;

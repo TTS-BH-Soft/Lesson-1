@@ -35,7 +35,11 @@ export function Navbar() {
         <NavBoxLink>
           <NavLink href="#" className="active">
             Home
-            <img src={PlusIcon} alt="Plus Icon" className="navbar__icon"></img>
+            <img
+              src={PlusIcon}
+              alt="Plus Icon"
+              style={{ margin: "0 4px", width: "7px", height: "7px" }}
+            ></img>
           </NavLink>
           <ChildLink href="#">About</ChildLink>
           <ChildLink href="#">Service</ChildLink>
