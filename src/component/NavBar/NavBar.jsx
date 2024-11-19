@@ -22,10 +22,16 @@ export function Navbar() {
     setIsMenuOpen((prev) => !prev);
   };
 
+  const handleBackgroundClick = (e) => {
+    if (e.target.classList.contains("mobile-menu")) {
+      setIsMenuOpen(false);
+    }
+  };
+
   return (
     <NavbarContainer>
       <Logo src={NavImage} alt="Logo" />
-      <HamburgerMenu onClick={toggleMenu}>
+      <HamburgerMenu isMenuOpen={isMenuOpen} onClick={toggleMenu}>
         <div></div>
         <div></div>
         <div></div>
@@ -39,7 +45,7 @@ export function Navbar() {
               src={PlusIcon}
               alt="Plus Icon"
               style={{ margin: "0 4px", width: "7px", height: "7px" }}
-            ></img>
+            />
           </NavLink>
           <ChildLink href="#">About</ChildLink>
           <ChildLink href="#">Service</ChildLink>
@@ -53,14 +59,20 @@ export function Navbar() {
           </Button>
         </NavBox>
       </Nav>
+
       {isMenuOpen && (
-        <MobileMenu>
-          <NavLink href="#">Home</NavLink>
-          <ChildLink href="#">About</ChildLink>
-          <ChildLink href="#">Service</ChildLink>
-          <ChildLink href="#">Gallery</ChildLink>
-          <RootLink href="#">Blog</RootLink>
-          <Button>Contact</Button>
+        <MobileMenu className="mobile-menu" onClick={handleBackgroundClick}>
+          <span className="close-btn" onClick={toggleMenu}>
+            ✕
+          </span>
+          <div className="menu-content">
+            <NavLink href="#">Home</NavLink>
+            <ChildLink href="#">About</ChildLink>
+            <ChildLink href="#">Service</ChildLink>
+            <ChildLink href="#">Gallery</ChildLink>
+            <RootLink href="#">Blog</RootLink>
+            <Button className="btn">Contact</Button>
+          </div>
         </MobileMenu>
       )}
     </NavbarContainer>

@@ -5,8 +5,9 @@ export const NavbarContainer = styled.div`
   align-items: flex-start;
   justify-content: space-around;
 
-  @media (max-width: 768px) {
-    // justify-content: space-betwee;
+  @media (max-width: 1024px) {
+    justify-content: space-around;
+    align-items: center;
   }
 `;
 
@@ -27,12 +28,13 @@ export const Nav = styled.div`
   margin-top: 4px;
   margin-right: 10px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     display: none;
 
     &.active {
       display: flex;
       flex-direction: column;
+      flex-wrap: wrap;
       position: absolute;
       top: 60px;
       right: 0;
@@ -120,30 +122,71 @@ export const HamburgerMenu = styled.div`
     height: 3px;
     background-color: #41487f;
     transition: all 0.3s ease;
+
+    &:nth-child(1) {
+      transform: ${({ isMenuOpen }) =>
+        isMenuOpen ? "rotate(45deg) translateY(8px)" : "none"};
+    }
+
+    &:nth-child(2) {
+      opacity: ${({ isMenuOpen }) => (isMenuOpen ? "0" : "1")};
+    }
+
+    &:nth-child(3) {
+      transform: ${({ isMenuOpen }) =>
+        isMenuOpen ? "rotate(-45deg) translateY(-8px)" : "none"};
+    }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     display: flex;
   }
 `;
 
 export const MobileMenu = styled.div`
   display: none;
-  flex-direction: column;
-  align-items: center;
-  background-color: #fff;
-  position: absolute;
-  top: 100%;
+  position: fixed;
+  top: 0;
   left: 0;
   width: 100%;
-  padding: 1rem 0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .menu-content {
+    position: relative;
+    background: transparent;
+    z-index: 10;
+  }
 
   a {
-    margin: 0.5rem 0;
+    padding: 0;
+    margin: 0;
     text-decoration: none;
     color: #41487f;
     font-size: 1.2rem;
+    margin: 1rem 0;
+
+    &:hover {
+      font-weight: bold;
+    }
+  }
+
+  button {
+    margin-top: 1.5rem;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 20rem;
+    right: 15rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #41487f;
   }
 
   @media (max-width: 768px) {
