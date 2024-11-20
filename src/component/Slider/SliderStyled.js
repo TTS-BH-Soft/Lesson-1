@@ -72,6 +72,8 @@ export const Paragraph = styled.p`
 
   @media (max-width: 480px) {
     font-size: 0.8rem;
+    width: 100%;
+    padding: 0 3rem;
   }
 `;
 
@@ -116,7 +118,9 @@ export const ImageContainer = styled.div`
   }
 
   @media (max-width: 480px) {
-    max-width: 300px;
+    img {
+      max-width: 480px;
+    }
   }
 `;
 

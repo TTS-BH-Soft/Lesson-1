@@ -19,6 +19,10 @@ export const Section = styled.section`
     background-position: center;
     // padding: 60px 20px;
   }
+
+  @media (max-width: 480px) {
+    width: 100%;
+  }
 `;
 
 export const Header = styled.div`
@@ -36,7 +40,7 @@ export const Header = styled.div`
   h2 {
     margin-top: 10px;
     font-weight: 600;
-    width: 732px;
+    max-width: 732px;
     height: 97px;
   }
 
@@ -56,6 +60,10 @@ export const Header = styled.div`
 
   @media (max-width: 769px) {
     margin-top: 0;
+  }
+
+  @media (max-width: 480px) {
+    width: 430px;
   }
 `;
 
