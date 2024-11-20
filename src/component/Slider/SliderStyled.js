@@ -118,8 +118,9 @@ export const ImageContainer = styled.div`
   }
 
   @media (max-width: 480px) {
+    width: 430px;
     img {
-      max-width: 480px;
+      max-width: 350px;
     }
   }
 `;

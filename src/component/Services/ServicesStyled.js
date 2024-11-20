@@ -64,6 +64,10 @@ export const Header = styled.div`
 
   @media (max-width: 480px) {
     width: 430px;
+
+    p {
+      width: 370px;
+    }
   }
 `;
 

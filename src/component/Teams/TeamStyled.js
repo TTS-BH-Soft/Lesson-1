@@ -27,6 +27,12 @@ export const Description = styled.p`
   margin: 0.7em 0;
   letter-spacing: 1.6px;
   font-weight: 400;
+
+  @media (max-width: 480px) {
+    max-width: 350px;
+    margin: 0.7em auto;
+    font-size: 0.9rem;
+  }
 `;
 
 export const TeamBox = styled.div`

@@ -72,6 +72,7 @@ export const Content = styled.div`
     @media (max-width: 768px) {
       font-size: 0.9rem;
       line-height: 22px;
+      width: 350px;
     }
   }
 

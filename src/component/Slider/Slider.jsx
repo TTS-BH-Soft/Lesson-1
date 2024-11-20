@@ -23,6 +23,7 @@ export function Slider() {
           </Paragraph>
           <Button className="btn">More Details</Button>
         </SliderText>
+
         <ImageContainer>
           <img src={SliderImage} alt="Beauty consultation" />
         </ImageContainer>

@@ -107,3 +107,14 @@ h5 {
     position: static;
   }
 }
+
+@media screen and (max-width: 768px) {
+  h5,
+  p {
+    font-size: 0.9rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
