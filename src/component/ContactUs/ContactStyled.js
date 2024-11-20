@@ -1,8 +1,9 @@
 import styled from "styled-components";
+import bgContact from "../../assets/background/bg-contact.svg";
 
 export const ContactSection = styled.section`
   padding: 2rem;
-  background: url("../../../public/bg-contact.svg") no-repeat;
+  background: url(${bgContact}) no-repeat;
   background-size: 82%;
 
   margin-bottom: 0.4rem;
@@ -24,12 +25,6 @@ export const Wrapper = styled.div`
   max-width: 1440px;
 
   @media (max-width: 1024px) {
-    flex-direction: column;
-    align-items: center;
-    padding-top: 100px;
-  }
-
-  @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
     padding-top: 100px;
