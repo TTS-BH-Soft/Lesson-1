@@ -39,17 +39,6 @@ export const Description = styled.p`
   }
 `;
 
-export const TeamBox = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-
-  @media (max-width: 1024px) {
-    flex-direction: column;
-  }
-`;
-
 export const TeamItem = styled.div`
   display: flex;
   flex-direction: column;
@@ -64,20 +53,53 @@ export const TeamItem = styled.div`
     props.center ? "0 25px 50px 25px #f6f7ff" : "none"};
   gap: ${(props) => (props.center ? "40px" : "0")};
   border-radius: ${(props) => (props.center ? "42px" : "0")};
+  transition: all 0.3s ease;
 
   &:hover {
     box-shadow: 0 25px 50px 25px #f6f7ff;
     height: 626px;
+    max-width: 424px;
     gap: 40px;
     border-radius: 42px;
     justify-content: center;
+
+    ${(props) =>
+      !props.center &&
+      `
+      max-width: 424px;
+      height: 626px;
+      gap: 40px;
+      border-radius: 42px;
+      justify-content: center;
+    `}
   }
 
   @media (max-width: 1024px) {
     flex-direction: column;
     gap: 0;
-
     margin: ${(props) => (props.center ? "0" : "6.2rem 30px")};
+  }
+`;
+
+export const TeamBox = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
+
+  &:hover ${TeamItem}[data-center="true"] {
+    max-width: 270px;
+    height: 439px;
+    box-shadow: none;
+    gap: 0;
+    border-radius: 0;
+    justify-content: space-between;
+    transition: all 0.3s ease;
   }
 `;
 

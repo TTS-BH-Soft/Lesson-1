@@ -137,7 +137,7 @@ export const BackToTopButton = styled.button`
   }
 
   @media (max-width: 480px) {
-    bottom: 80px;
-    right: 10px;
+    bottom: 130px;
+    right: 15px;
   }
 `;

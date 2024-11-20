@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import {
   TeamSection,
   SectionTitle,
@@ -13,6 +14,20 @@ import teamMembers from "../../data/teamMembers";
 import SocialIcon from "../SocialIcon/SocialIcon";
 
 export function Teams() {
+  const [teamState, setTeamState] = useState(teamMembers);
+
+  const handleHover = (hoveredIndex) => {
+    const updatedState = teamMembers.map((member, index) => ({
+      ...member,
+      center: index === hoveredIndex,
+    }));
+    setTeamState(updatedState);
+  };
+
+  const handleMouseLeave = () => {
+    setTeamState(teamMembers);
+  };
+
   return (
     <TeamSection id="team">
       <SectionTitle>Professional Teams</SectionTitle>
@@ -22,8 +37,13 @@ export function Teams() {
       </Description>
 
       <TeamBox>
-        {teamMembers.map((member, index) => (
-          <TeamItem key={index} center={member.center}>
+        {teamState.map((member, index) => (
+          <TeamItem
+            key={index}
+            center={member.center}
+            onMouseEnter={() => handleHover(index)}
+            onMouseLeave={handleMouseLeave}
+          >
             <TeamImage>
               <img src={member.image} alt={member.name} />
             </TeamImage>

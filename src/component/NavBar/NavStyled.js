@@ -187,6 +187,8 @@ export const MobileMenu = styled.div`
   }
 
   @media (max-width: 1024px) {
+    max-width: 1024px;
+
     a {
       margin: 1rem 0;
       padding: 0;
@@ -194,6 +196,12 @@ export const MobileMenu = styled.div`
   }
 
   @media (max-width: 768px) {
+    max-width: 768px;
+    display: flex;
+  }
+
+  @media (max-width: 480px) {
+    max-width: 480px;
     display: flex;
   }
 `;
