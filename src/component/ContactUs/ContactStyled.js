@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import bgContact from "../../assets/background/bg-contact.svg";
+// import bgContact from "../../assets/background/bg-contact.svg";
 
 export const ContactSection = styled.section`
   padding: 2rem;
-  background: url(${bgContact}) no-repeat;
+  background: url("../../assets/background/bg-contact.svg") no-repeat;
   background-size: 82%;
 
   margin-bottom: 0.4rem;
