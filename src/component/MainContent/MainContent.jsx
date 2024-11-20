@@ -1,4 +1,4 @@
-import BubbleBg from "../../assets/background/bg-about.svg";
+import BubbleBg from "../../../public/bg-about.svg";
 import Services from "../Services/Services";
 import AboutUs from "../AboutUs/AboutUs";
 

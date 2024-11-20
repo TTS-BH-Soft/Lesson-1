@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ContactSection = styled.section`
   padding: 2rem;
-  background: url("../../assets/background/bg-contact.svg") no-repeat;
+  background: url("../../../public/bg-contact.svg") no-repeat;
   background-size: 82%;
 
   margin-bottom: 0.4rem;
