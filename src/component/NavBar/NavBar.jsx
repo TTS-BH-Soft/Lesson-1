@@ -65,14 +65,13 @@ export function Navbar() {
           <span className="close-btn" onClick={toggleMenu}>
             ✕
           </span>
-          <div className="menu-content">
-            <NavLink href="#">Home</NavLink>
-            <ChildLink href="#">About</ChildLink>
-            <ChildLink href="#">Service</ChildLink>
-            <ChildLink href="#">Gallery</ChildLink>
-            <RootLink href="#">Blog</RootLink>
-            <Button className="btn">Contact</Button>
-          </div>
+
+          <NavLink href="#">Home</NavLink>
+          <ChildLink href="#">About</ChildLink>
+          <ChildLink href="#">Service</ChildLink>
+          <ChildLink href="#">Gallery</ChildLink>
+          <RootLink href="#">Blog</RootLink>
+          <Button className="btn">Contact</Button>
         </MobileMenu>
       )}
     </NavbarContainer>

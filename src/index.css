@@ -73,7 +73,7 @@ h5 {
 .about-us__bg {
   position: absolute;
   top: 1311px;
-  left: 64.2%;
+  left: 67.2%;
   transform: translateX(-50%) scale(0.79);
   z-index: -99;
   width: 100%;
@@ -102,9 +102,12 @@ h5 {
     background-size: cover;
   }
 
+  body {
+    margin: 0 auto;
+  }
+
   .about-us__bg {
-    display: none;
-    position: static;
+    left: 60%;
   }
 }
 
@@ -116,5 +119,9 @@ h5 {
 
   h2 {
     font-size: 1.5rem;
+  }
+
+  .about-us__bg {
+    left: 60%;
   }
 }

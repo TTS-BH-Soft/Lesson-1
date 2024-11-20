@@ -152,11 +152,11 @@ export const ImageContainer = styled.div`
   max-width: 476px;
 
   @media (max-width: 1024px) {
-    max-width: 100%; /* Chiếm toàn bộ chiều ngang */
+    max-width: 100%;
     padding-top: 0;
 
     img {
-      width: 100%; /* Ảnh sẽ tự co giãn theo kích thước container */
+      width: 100%;
       height: auto;
     }
   }

@@ -65,7 +65,7 @@ export const FooterBottom = styled.div`
   }
 
   @media (max-width: 480px) {
-    margin: 1rem 0;
+    margin-top: 1rem;
   }
 `;
 

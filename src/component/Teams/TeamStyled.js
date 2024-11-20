@@ -8,6 +8,10 @@ export const TeamSection = styled.section`
   margin-bottom: -160px;
 
   text-align: center;
+
+  @media (max-width: 480px) {
+    max-width: 400px;
+  }
 `;
 
 export const SectionTitle = styled.h5`

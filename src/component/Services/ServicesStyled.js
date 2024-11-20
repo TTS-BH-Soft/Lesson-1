@@ -21,7 +21,7 @@ export const Section = styled.section`
   }
 
   @media (max-width: 480px) {
-    width: 100%;
+    max-width: 390px;
   }
 `;
 
@@ -63,7 +63,7 @@ export const Header = styled.div`
   }
 
   @media (max-width: 480px) {
-    width: 430px;
+    max-width: 390px;
 
     p {
       width: 370px;

@@ -144,7 +144,6 @@ export const HamburgerMenu = styled.div`
 `;
 
 export const MobileMenu = styled.div`
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -152,24 +151,22 @@ export const MobileMenu = styled.div`
   height: 100%;
   background-color: rgba(255, 255, 255, 0.95);
   z-index: 1000;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  .menu-content {
-    position: relative;
-    background: transparent;
-    z-index: 10;
-  }
-
   a {
-    padding: 0;
-    margin: 0;
     text-decoration: none;
     color: #41487f;
     font-size: 1.2rem;
-    margin: 1rem 0;
+    margin: 1rem auto;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &:hover {
       font-weight: bold;
@@ -182,11 +179,18 @@ export const MobileMenu = styled.div`
 
   .close-btn {
     position: absolute;
-    top: 20rem;
+    top: 10rem;
     right: 15rem;
     font-size: 1.5rem;
     cursor: pointer;
     color: #41487f;
+  }
+
+  @media (max-width: 1024px) {
+    a {
+      margin: 1rem 0;
+      padding: 0;
+    }
   }
 
   @media (max-width: 768px) {
