@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import bgContact from "../../assets/background/bg-contact.svg";
+import bgContact from "../../assets/background/bg-contact.jpg";
 
 export const ContactSection = styled.section`
   padding: 2rem;
