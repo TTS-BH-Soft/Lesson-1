@@ -17,11 +17,12 @@ export const Section = styled.section`
 
   @media (max-width: 768px) {
     background-position: center;
-    // padding: 60px 20px;
   }
 
   @media (max-width: 480px) {
     max-width: 390px;
+    justify-content: center;
+    margin: 0 auto;
   }
 `;
 
